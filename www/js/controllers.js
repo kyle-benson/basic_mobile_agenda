@@ -51,6 +51,12 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 })
+.controller('salesAgendaCtrl', function($scope){
+  $scope.speakers = [
+    {name: 'Kyle Jensen', img: '../img/kyle_jensen_profile.jpg', title: 'Channel Account Manager', sessionTitle: 'Welcome and Introduction'},
+    {name: 'Kyle Benson', img: '../img/kyle_profile.jpg', title: 'Partner Solutions Architect', sessionTitle: 'Leveraging OpenShift for DevOps',description: 'I\'m doing a (free) operating system (just a hobby, won\'t be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready.'},
+  ];
+})
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });

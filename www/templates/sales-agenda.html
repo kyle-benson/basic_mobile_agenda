@@ -1,0 +1,23 @@
+<ion-view view-title="Sales Agenda">
+  <ion-content>
+    <h1 align="center">Sales Agenda</h1>
+    <ion-list ng-repeat="speaker in speakers">
+      <div class="list card">
+        <div class="item item-avatar">
+          <img src="{{speaker.img}}">
+          <h2>{{speaker.sessionTitle}}</h2>
+          <p>{{speaker.name}}</p>
+          <p class="subdued">{{speaker.title}}</p>
+        </div>
+        <div class="item item-body">
+
+          <p>{{speaker.description}}</p>
+          <p>
+            <a href="#" class="subdued">Reviews</a>
+            <a href="#" class="subdued">Leave a Review</a>
+          </p>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
