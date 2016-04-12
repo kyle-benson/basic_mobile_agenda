@@ -37,19 +37,31 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/sales-agenda.html',
-        controller: 'salesAgendaCtrl'
+        controller: 'agendaCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.techAgenda', {
+      url: '/tech-agenda',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/tech-agenda.html',
+          controller: 'agendaCtrl'
         }
       }
     })
+
+  .state('app.talk', {
+      url: '/talks/:speakerId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/talk.html',
+          controller: 'agendaCtrl'
+        }
+      }
+    })
+
     .state('app.playlists', {
       url: '/playlists',
       views: {

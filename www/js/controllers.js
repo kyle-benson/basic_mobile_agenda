@@ -51,10 +51,12 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 })
-.controller('salesAgendaCtrl', function($scope){
+.controller('agendaCtrl', function($scope){
   $scope.speakers = [
-    {name: 'Kyle Jensen', img: '../img/kyle_jensen_profile.jpg', title: 'Channel Account Manager', sessionTitle: 'Welcome and Introduction'},
-    {name: 'Kyle Benson', img: '../img/kyle_profile.jpg', title: 'Partner Solutions Architect', sessionTitle: 'Leveraging OpenShift for DevOps',description: 'I\'m doing a (free) operating system (just a hobby, won\'t be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready.'},
+    {name: 'Kyle Jensen', img: '../img/kyle_jensen_profile.jpg', title: 'Channel Account Manager', sessionTitle: 'Welcome and Introduction', track: 'sales', id: 1},
+    {name: 'Kevin Chin', img: '../img/kevin_chin_profile.jpg', title: 'Solutions Architect Manager', sessionTitle: 'Welcome and Introduction', track: 'tech', id: 2},
+    {name: 'Kyle Benson', img: '../img/kyle_profile.jpg', title: 'Partner Solutions Architect', sessionTitle: 'Leveraging OpenShift for DevOps',description: 'I\'m doing a (free) operating system (just a hobby, won\'t be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready.', track:'tech', id: 3},
+    {name: 'Adam Clater', img: '../img/adam_clater_profile.jpg', title: 'Office of the Chief Technologist', sessionTitle: 'Selling with Red Hat',description: 'A-B-C. A-Always, B-Be, C-Closing. Always be closing. ALWAYS BE CLOSING. A-I-D-A. Attention, Interest, Decision, Action. Attention - Do I have your attention?', track:'sales', id: 4},
   ];
 })
 

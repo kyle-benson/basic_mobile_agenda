@@ -1,6 +1,6 @@
-<ion-view view-title="Sales Agenda">
+<ion-view view-title="Technical Agenda">
   <ion-content>
-    <ion-list ng-repeat="speaker in speakers | filter:{track:'sales'}">
+    <ion-list ng-repeat="speaker in speakers | filter:{track:'tech'}">
       <div class="list card">
         <div class="item item-avatar">
           <img src="{{speaker.img}}">
@@ -12,8 +12,8 @@
 
           <p>{{speaker.description}}</p>
           <p>
-            <i class="icon ion-thumbsup"> Likes</i>
-            <a href="#" class="subdued">Learn more about {{speaker.product}}</a>
+            <a href="#" class="subdued">Reviews</a>
+            <a href="#" class="subdued">Leave a Review</a>
           </p>
         </div>
       </div>
